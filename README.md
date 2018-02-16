@@ -5,7 +5,7 @@ PyFlatter brings automatic color flatting to Linux! "Color flatting" is the proc
 
 PyFlatter uses the Python Image Library and ImageMagick to automate color flatting right from the Linux user's favorite tool--the command line! Just give it your linework and out comes a lovely set of color flats, ready to be imported into the image editor of your choice.
 
-Visit johnwallie.com/pyflatter to see image examples.
+Visit http://www.johnwallie.com/pyflatter to see image examples.
 
 ## Features
 - **Gap handling** PyFlatter will attempt to overlook any gaps in your linework so that shapes don't need to be completely enclosed to be filled in.
