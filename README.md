@@ -25,22 +25,11 @@ It's very easy: **pyflatter.py inputfile.png** and you're off! You can also use 
 - Right now the output file is always a PNG. Hopefully that's not too inconvenient for anyone.
 - Images with cross-hatching are not handled well.
 
-## Troubles with ImageMagick
-For security reasons, some repositories (including Ubuntu) provide a build of ImageMagick that has pipes disabled. Unfortunately, the voronoi function requires ImageMagick to support pipes in order to work. If you find yourself in this conundrum, you may have to compile ImageMagick yourself. Don't despair, it's pretty easy.
-
-Before you build it yourself, check the policy.xml file for ImageMagick. Mine was located at /etc/ImageMagick-6/policy.xml. There is a line that should look like this: <!-- <policy domain="path" rights="none" pattern="@*" /> --> . If it's not commented out--comment it out! If you're lucky, that will enable it to work. 
-
-Otherwise, here is how to compile ImageMagick yourself:
-
-1. First, download the ImageMagick source code ( http://imagemagick.org/script/install-source.php ) and unpack it somewhere.
-2. In your distro's software sources utility, enable source code repositories and update the cache.
-3. Get the build-essentials package: **sudo apt-get build-essentials**
-4. Get ImageMagick's essential libraries: **sudo apt-get build-dep imagemagick**
-5. CD to the directory where you put the ImageMagick source and run: **./configure --enable-pipes**
-6. You should be ready to compile. Type: **make**
-7. Wait a few minutes while it compiles...
-8. Once it's done: **sudo make install**
-9. And now you're ready for action! See, that was pretty painless.
+## Changelog
+1.1 - Improved PEP 8 conformity.
+      Eliminated need for ImageMagick to support pipes. 
+      Made temp files get written to /tmp instead of working directory.
+1.0 - Initial version
 
 ## But I want to run it on Windows!
 
@@ -48,4 +37,4 @@ Maybe in the future, young padawan. But the time is not yet ripe.
 
 ## Credit where credit is due
 
-Thanks to fmw42 on the ImageMagick forums for helping me figure out how to get the voronoi working.
+Thanks to fmw42 on the ImageMagick forums for helping me figure out how to get the voronoi working, and Snibgo for showing me the workaround for pipes.
