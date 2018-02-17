@@ -26,10 +26,12 @@ It's very easy: **pyflatter.py inputfile.png** and you're off! You can also use 
 - Images with cross-hatching are not handled well.
 
 ## Changelog
-1.1 - Improved PEP 8 conformity.
-      Eliminated need for ImageMagick to support pipes. 
-      Made temp files get written to /tmp instead of working directory.
-1.0 - Initial version
+* 1.1
+  * Improved PEP 8 conformity
+  * Eliminated need for ImageMagick to support pipes.
+  * Made temp files get written to /tmp instead of working directory.
+* 1.0
+  * Initial version
 
 ## But I want to run it on Windows!
 
