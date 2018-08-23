@@ -40,3 +40,6 @@ Maybe in the future, young padawan. But the time is not yet ripe.
 ## Credit where credit is due
 
 Thanks to fmw42 on the ImageMagick forums for helping me figure out how to get the voronoi working, and Snibgo for showing me the workaround for pipes.
+
+## A probably-better alternative
+Someone named Ayal Pinkus made a tool that does basically the same thing, only it's faster and it's cross-platform. Check it out here: https://www.ayalpinkus.nl/Flatton.html
